@@ -40,20 +40,20 @@ function MyApp({ Component, pageProps, theme = 'dark' }: Props ) {
 }
 
 
+/*
+ MyApp.getInitialProps = async( appContext: AppContext ) => {
 
-// MyApp.getInitialProps = async( appContext: AppContext ) => {
-
-//   const { theme } = appContext.ctx.req ? ( appContext.ctx.req as any).cookies : { theme: 'light' }
+   const { theme } = appContext.ctx.req ? ( appContext.ctx.req as any).cookies : { theme: 'light' }
   
-//   const validThemes = ['light','dark','custom'];
-//   // console.log('getInitialProps: ', cookies);
+   const validThemes = ['light','dark','custom'];
+   // console.log('getInitialProps: ', cookies);
 
-//   return {
-//     theme: validThemes.includes( theme ) ? theme : 'dark',
-//   }
+   return {
+     theme: validThemes.includes( theme ) ? theme : 'dark',
+   }
 
-// }
-
+ }
+*/
 
 
 
