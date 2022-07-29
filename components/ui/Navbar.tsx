@@ -1,7 +1,6 @@
 import NextLink from 'next/link';
 
 import { AppBar, IconButton, Link, Toolbar, Typography } from '@mui/material'
-import { MenuOutlined } from '@mui/icons-material'
 
 export const Navbar = () => {
   return (
@@ -11,7 +10,7 @@ export const Navbar = () => {
                 size='large'
                 edge='start'
             >
-                <MenuOutlined />
+                
             </IconButton>
 
             <NextLink href="/" passHref>

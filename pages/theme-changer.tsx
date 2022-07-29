@@ -4,6 +4,7 @@ import { Button, Card, CardContent, FormControl, FormControlLabel, FormLabel, Ra
 
 import Cookies from 'js-cookie';
 import axios from 'axios';
+import React from 'react'
 
 
 import { Layout } from '../components/layouts';
@@ -40,7 +41,7 @@ const ThemeChangerPage: FC<Props> = ({ theme }) => {
         console.log( 'LocalStorage:', localStorage.getItem('theme') );
         console.log( 'Cookies:', Cookies.get('theme') );
     
-        // axios.post('/api/hello', { localStorage.getItem('them')});
+       // axios.post('/api/hello', { localStorage.getItem('theme')});
     }, [])
     
 
@@ -80,7 +81,6 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
     
     const { theme = 'light', name = 'No name' } = req.cookies;
     const validThemes = ['light','dark','custom'];
-
 
     return {
         props: {
